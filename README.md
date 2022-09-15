@@ -6,4 +6,6 @@
 <br/>
 <h1>Setup</h1>
 </div>
+<h2>You need to install python</2>
+<h4>By <a href="https://python.org/downloads">clicking here</a></h4>
 
