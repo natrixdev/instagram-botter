@@ -10,4 +10,4 @@
 <h4>By <a href="https://python.org/downloads">clicking here</a></h4>
 <br/>
 <h2>Install packages</h2>
-<h4>By running <a href="https://github.com/natrixdev/instagram-botter/edit/main/reqs.txt"</a></h4>
+<h4>By running <a href="https://github.com/natrixdev/instagram-botter/edit/main/reqs.txt">req.txt</a> file</h4>
