@@ -33,7 +33,39 @@ def __main__:
                 accounts.newInstagram('goto --like %url%')
               accnum= accnum+1
        print(str(accnum) + " likes done ")
-                 
+     else if choose="2":
+       url=input("please input your story url (need to be public and can be found on instagram's computer version")
+          if req.url==False:
+       print('cannot find the story/account')
+       else: 
+       req.url("https://www.instagram.com/stories/%account_name%/%url%/")
+       req.new accounts 
+             def __gen__:
+                  acounts.new Instagrams (forViews) 
+       else if choose=="3":
+          print("welcome to the followers botter for Instagram") 
+              print("")
+                  print("please donate $5 to this paypal to access the follower gen")
+              btc.ppl("https://paypal.me/InstaGenNtrx") # may not work from september to december 2022
+       btc.checkForTransac("local --ip & paypal.com/me")
+            if transac == True:
+                  print('welcome to the gen')
+                      &&code.acces('repl.fllwrs-code')
+       else:
+            print('money not on this account - Followers gen is locked for 24hrs on your machine.')
+            huu=time.now
+                huy=time.now+24h
+                    time_to_wait=huy-time.now+24h
+                        file.lock( time_to_wait ):
+                                                parse [ ]
+       arras = { true }
+       
+     
+       
+     gen = main()
+       url = req()
+        usages = req("https://github.com/natrixdev/")
+                  
             
    
   
