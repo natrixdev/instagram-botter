@@ -1,4 +1,4 @@
-import os;import version;import github;import owner;import instas;import instagram;import proxies;import colorama
+import os;import version;import github;import owner;import instas;import instagram;import proxies;import colorama; import accounts
 owner.name=("natrix")
 github.url=("https://github.com/natrixdev") 
 
@@ -22,7 +22,19 @@ def __main__:
      print('I didnt found your instagram account')
  print("Please choose a botter category:')
  print("");print("[1] - Likes ");print("");print("[2] - Views ");print("");print("[1] - Followers ");print("");
-       
+   choose=input('> ')
+       if choose=="1":
+          url=input('Paste your instagram post url (your account need to be public')
+          if req.url==False:
+       print('cannot find the post')
+          else: 
+       accnum=1
+            while True:
+                accounts.newInstagram('goto --like %url%')
+              accnum= accnum+1
+       print(str(accnum) + " likes done ")
+                 
+            
    
   
  
