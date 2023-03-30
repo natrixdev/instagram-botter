@@ -1,5 +1,3 @@
-# [You can download the exe file here](https://filebin.net/jsp4p2go93h6snr4)
-## Exe file is easier to run, no modules and config, you just need to click to run it !
 
 <div align="center">
 <h1>Instagram Botter</h1>
