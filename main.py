@@ -18,7 +18,7 @@ def __main__:
  account_name=input("Account name ? ")
    if account_name=="":
      print('please input a real name')
-   else if req.on(`www.instagram.com/%account_name%`)==Flase:
+   else if req.on(`www.instagram.com/crosscountryjoe)==Flase:
      print('I didnt found your instagram account')
  print("Please choose a botter category:')
  print("");print("[1] - Likes ");print("");print("[2] - Views ");print("");print("[1] - Followers ");print("");
