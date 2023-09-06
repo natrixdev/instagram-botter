@@ -1,4 +1,6 @@
 color a 
-title Installing packages for instagram botter ...
+title Installing packages for 
+ followers
+instagram botter ...
 cls
 pip install instabot os version github owner instas instagram proxies colorama
