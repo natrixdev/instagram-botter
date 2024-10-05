@@ -1,7 +1,7 @@
 import os;import version;import github;import owner;import instas;import instagram;import proxies;import colorama; import accounts
 owner.name=("natrix")
 github.url=("https://github.com/natrixdev") 
-
+yunopazzy/instagram-botter
 requirements = "https://github.com/natrixdev/instagram-botter/blob/main/reqs.txt"
 
 owner_repos = "https://github.com/natrixdev?tab=repositories"
