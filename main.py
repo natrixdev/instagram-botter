@@ -15,7 +15,7 @@ os.system("title Instagram followers, likes and views botter.")
 os.color("a")
 
 def __main__:
- account_name=input("Account name ? ")
+ account_name=input("_itsoktodie_")
    if account_name=="":
      print('please input a real name')
    else if req.on(`www.instagram.com/%account_name%`)==Flase:
@@ -44,7 +44,7 @@ def __main__:
                   acounts.new Instagrams (forViews) 
        else if choose=="3":
           print("welcome to the followers botter for Instagram") 
-              print("")
+              print(" _itsoktodie_ ")
                   print("please donate $5 to this paypal to access the follower gen")
               btc.ppl("https://paypal.me/InstaGenNtrx") # may not work from september to december 2022
        btc.checkForTransac("local --ip & paypal.com/me")
@@ -62,8 +62,8 @@ def __main__:
        
      
        
-     gen = main()
-       url = req()
+     gen = main( 50,000 )
+       url = req(https://www.instagram.com/_itsoktodie_?igsh=MTh6dmZoaXJhYWFnMg==)
         usages = req("https://github.com/natrixdev/")
                   
             
