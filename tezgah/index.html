@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tezgah</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://images.unsplash.com">
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar container">
+    <a href="#" class="logo">Tezgah</a>
+    <div class="nav-controls">
+      <div class="category">
+        <select id="categorySelect" aria-label="Kategori">
+          <option value="all">Tümü</option>
+        </select>
+      </div>
+      <div class="search">
+        <input id="searchInput" type="search" placeholder="Ürün veya açıklama ara" aria-label="Ara">
+      </div>
+    </div>
+    <div class="nav-actions">
+      <button id="cartBtn" class="icon-btn" aria-label="Sepet">
+        <span class="badge" id="cartCount">0</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 .001 4.001A2 2 0 0 0 17 18ZM6.2 5l.4 2H20a1 1 0 0 1 .98 1.2l-1.4 7A2 2 0 0 1 17.62 15H9.24a2 2 0 0 1-1.98-1.6L6 6H3a1 1 0 1 1 0-2h2.5c.36 0 .67.24.7.56ZM9.24 13h8.38l1-5H7.23l.8 4.02A1 1 0 0 0 9.24 13Z"/></svg>
+      </button>
+      <button id="profileBtn" class="btn ghost">Profil</button>
+      <button id="sellerBtn" class="btn">Satıcı Paneli</button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero container">
+  <div class="banners">
+    <div class="banner" style="background-image:url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1974&auto=format&fit=crop');">
+      <div class="banner-content">
+        <h2>İkinci El Teknoloji Fırsatları</h2>
+        <p>Telefon, laptop ve aksesuarlar uygun fiyatlarla</p>
+        <a href="#popular" class="btn light">Popülerleri Gör</a>
+      </div>
+    </div>
+    <div class="banner" style="background-image:url('https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=2070&auto=format&fit=crop');">
+      <div class="banner-content">
+        <h2>Evin İçin Uygun Parçalar</h2>
+        <p>Mobilya ve dekorasyon ürünleri seni bekliyor</p>
+        <a href="#new" class="btn light">Yeni Eklenenler</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+  <section id="popular" class="section">
+    <div class="section-head">
+      <h3>Popüler Ürünler</h3>
+    </div>
+    <div id="popularGrid" class="product-grid"></div>
+  </section>
+
+  <section id="new" class="section">
+    <div class="section-head">
+      <h3>Yeni Eklenenler</h3>
+    </div>
+    <div id="newGrid" class="product-grid"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo">Tezgah</a>
+      <p>Uygun fiyatlı ikinci el ürünlerin buluşma noktası.</p>
+      <p>© 2025 Tezgah</p>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram" class="icon-btn">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 7.2A4.8 4.8 0 1 0 16.8 12 4.806 4.806 0 0 0 12 7.2Zm0 7.92A3.12 3.12 0 1 1 15.12 12 3.124 3.124 0 0 1 12 15.12ZM17.28 6.48a1.12 1.12 0 1 0 1.12 1.12 1.12 1.12 0 0 0-1.12-1.12ZM21.6 12c0-2.184.02-4.368-.104-6.548a4.97 4.97 0 0 0-4.948-4.948C14.368.38 12.184.4 10 .4S5.632.38 3.452.504A4.97 4.97 0 0 0 .504 5.452C.38 7.632.4 9.816.4 12s-.02 4.368.104 6.548a4.97 4.97 0 0 0 4.948 4.948C7.632 23.62 9.816 23.6 12 23.6s4.368.02 6.548-.104a4.97 4.97 0 0 0 4.948-4.948C23.62 16.368 23.6 14.184 23.6 12Zm-2.184 6.332a3.166 3.166 0 0 1-1.816 1.816c-1.26.498-4.25.384-5.6.384s-4.34.111-5.6-.384a3.166 3.166 0 0 1-1.816-1.816c-.498-1.26-.384-4.25-.384-5.6s-.111-4.34.384-5.6a3.166 3.166 0 0 1 1.816-1.816C7.26 4.638 10.25 4.752 11.6 4.752s4.34-.111 5.6.384a3.166 3.166 0 0 1 1.816 1.816c.498 1.26.384 4.25.384 5.6s.111 4.34-.384 5.6Z"/></svg>
+      </a>
+      <a href="#" aria-label="Twitter" class="icon-btn">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M19.633 7.997c.013.178.013.357.013.535 0 5.45-4.149 11.74-11.74 11.74A11.68 11.68 0 0 1 2 19.6c.253.03.494.04.76.04a8.28 8.28 0 0 0 5.133-1.77 4.14 4.14 0 0 1-3.865-2.868c.25.04.5.066.763.066.369 0 .738-.05 1.082-.142a4.13 4.13 0 0 1-3.312-4.054v-.052c.55.304 1.183.487 1.856.51A4.125 4.125 0 0 1 3.4 6.78a11.73 11.73 0 0 0 8.513 4.317 4.65 4.65 0 0 1-.102-.944 4.13 4.13 0 0 1 7.142-2.827 8.16 8.16 0 0 0 2.62-.999 4.15 4.15 0 0 1-1.814 2.283 8.29 8.29 0 0 0 2.37-.64 8.89 8.89 0 0 1-1.897 1.027Z"/></svg>
+      </a>
+      <a href="#" aria-label="GitHub" class="icon-btn">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.24c0 5.21 3.37 9.62 8.04 11.18.59.11.81-.26.81-.58 0-.29-.01-1.05-.02-2.06-3.27.73-3.96-1.6-3.96-1.6-.54-1.4-1.33-1.78-1.33-1.78-1.09-.77.08-.76.08-.76 1.21.09 1.85 1.27 1.85 1.27 1.07 1.91 2.82 1.36 3.5 1.04.11-.79.42-1.36.77-1.67-2.61-.3-5.36-1.36-5.36-6.06 0-1.34.47-2.44 1.24-3.3-.12-.31-.54-1.56.12-3.26 0 0 1.01-.33 3.3 1.26a11.4 11.4 0 0 1 6 0c2.29-1.59 3.3-1.26 3.3-1.26.66 1.7.24 2.95.12 3.26.77.86 1.24 1.96 1.24 3.3 0 4.72-2.75 5.75-5.37 6.05.43.37.82 1.1.82 2.22 0 1.6-.02 2.88-.02 3.27 0 .32.22.69.82.58A11.51 11.51 0 0 0 23.5 12.24 11.5 11.5 0 0 0 12 .5Z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div id="productModal" class="modal" aria-hidden="true">
+  <div class="modal-overlay" data-close="productModal"></div>
+  <div class="modal-card">
+    <button class="modal-close" aria-label="Kapat" data-close="productModal">×</button>
+    <div class="product-detail">
+      <div class="detail-media">
+        <img id="detailImg" src="" alt="">
+      </div>
+      <div class="detail-info">
+        <h3 id="detailTitle"></h3>
+        <p id="detailDesc" class="detail-desc"></p>
+        <div class="detail-meta">
+          <span class="chip" id="detailCategory"></span>
+          <span class="price" id="detailPrice"></span>
+        </div>
+        <div class="detail-actions">
+          <button id="detailFavBtn" class="favorite-btn" aria-label="Favori">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12.1 21.35c-.13.09-.3.09-.43 0C7.14 17.9 4.2 15.3 2.74 12.8 1.9 11.37 1.6 9.86 1.86 8.4c.25-1.43.99-2.76 2.12-3.65 2.15-1.7 5.13-1.17 6.88.92l.64.77.64-.77c1.75-2.09 4.73-2.62 6.88-.92 1.13.89 1.87 2.22 2.12 3.65.26 1.46-.04 2.97-.88 4.4-1.46 2.5-4.4 5.1-8.93 8.55Z"/></svg>
+          </button>
+          <div class="qty">
+            <button class="qty-btn" data-qty="-1">−</button>
+            <input id="detailQty" type="number" min="1" value="1" aria-label="Adet">
+            <button class="qty-btn" data-qty="1">+</button>
+          </div>
+          <button id="detailAddCart" class="btn">Sepete Ekle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="authModal" class="modal" aria-hidden="true">
+  <div class="modal-overlay" data-close="authModal"></div>
+  <div class="modal-card small">
+    <button class="modal-close" aria-label="Kapat" data-close="authModal">×</button>
+    <div id="authView">
+      <h3>Giriş Yap</h3>
+      <form id="loginForm" class="form-grid">
+        <label>
+          <span>Ad Soyad</span>
+          <input type="text" id="loginName" required>
+        </label>
+        <label>
+          <span>E-posta</span>
+          <input type="email" id="loginEmail" required>
+        </label>
+        <button type="submit" class="btn">Giriş Yap</button>
+      </form>
+    </div>
+    <div id="profileView" class="hidden">
+      <h3>Profil</h3>
+      <div class="profile-box">
+        <div><strong>Ad:</strong> <span id="profileName"></span></div>
+        <div><strong>E-posta:</strong> <span id="profileEmail"></span></div>
+      </div>
+      <button id="logoutBtn" class="btn ghost">Çıkış Yap</button>
+    </div>
+  </div>
+</div>
+
+<div id="sellerModal" class="modal" aria-hidden="true">
+  <div class="modal-overlay" data-close="sellerModal"></div>
+  <div class="modal-card large">
+    <button class="modal-close" aria-label="Kapat" data-close="sellerModal">×</button>
+    <div class="seller-header">
+      <h3>Satıcı Paneli</h3>
+      <div class="seller-actions">
+        <button id="newProductBtn" class="btn light">Yeni Ürün</button>
+      </div>
+    </div>
+    <form id="productForm" class="form-grid" autocomplete="off">
+      <input type="hidden" id="productId">
+      <label>
+        <span>Başlık</span>
+        <input type="text" id="productTitle" required maxlength="80">
+      </label>
+      <label>
+        <span>Açıklama</span>
+        <textarea id="productDesc" rows="3" required maxlength="200"></textarea>
+      </label>
+      <div class="form-row">
+        <label>
+          <span>Fiyat (₺)</span>
+          <input type="number" id="productPrice" min="0" required>
+        </label>
+        <label>
+          <span>Kategori</span>
+          <input type="text" id="productCategory" required>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="productPopular">
+          <span>Popüler</span>
+        </label>
+      </div>
+      <label>
+        <span>Görsel URL</span>
+        <input type="url" id="productImg" required>
+      </label>
+      <div class="form-actions">
+        <button type="submit" class="btn">Kaydet</button>
+        <button type="button" id="resetFormBtn" class="btn ghost">Temizle</button>
+      </div>
+    </form>
+    <div class="table-wrap">
+      <table class="table" id="sellerTable" aria-label="Ürünlerim">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Başlık</th>
+            <th>Kategori</th>
+            <th>Fiyat</th>
+            <th>Popüler</th>
+            <th>Oluşturma</th>
+            <th>İşlem</th>
+          </tr>
+        </thead>
+        <tbody id="sellerTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<aside id="cartDrawer" class="drawer" aria-hidden="true">
+  <div class="drawer-overlay" data-close="cartDrawer"></div>
+  <div class="drawer-panel">
+    <div class="drawer-head">
+      <h3>Sepet</h3>
+      <button class="modal-close" aria-label="Kapat" data-close="cartDrawer">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary">
+      <div class="cart-line">
+        <span>Ara Toplam</span>
+        <strong id="cartSubtotal">₺0</strong>
+      </div>
+      <div class="cart-line small">
+        <span>Kargo</span>
+        <span id="cartShipping">₺0</span>
+      </div>
+      <div class="cart-line total">
+        <span>Toplam</span>
+        <strong id="cartTotal">₺0</strong>
+      </div>
+      <div class="cart-actions">
+        <button id="clearCartBtn" class="btn ghost">Sepeti Temizle</button>
+        <button id="checkoutBtn" class="btn">Ödemeyi Tamamla</button>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<script src="main.js" defer></script>
+</body>
+</html>
+
