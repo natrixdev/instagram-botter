@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profil – DolapX</title>
+    <meta name="description" content="Kullanıcı bilgileri, satın alınanlar, satılanlar ve favoriler.">
+    <link rel="canonical" href="/profile.html">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="profile">
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a class="brand" href="index.html" aria-label="Ana sayfa">
+          <span class="brand-logo"></span>
+          DolapX
+        </a>
+        <nav class="nav-links">
+          <div class="dropdown">
+            <button class="dropdown-toggle">Kategoriler</button>
+            <div class="dropdown-menu">
+              <a href="category.html?category=Giyim">Giyim</a>
+              <a href="category.html?category=Elektronik">Elektronik</a>
+              <a href="category.html?category=Aksesuar">Aksesuar</a>
+              <a href="category.html?category=Kitap">Kitap</a>
+            </div>
+          </div>
+        </nav>
+        <form id="nav-search-form" class="search" role="search">
+          <input id="nav-search-input" type="search" placeholder="Ürün veya kategori ara" aria-label="Ara">
+          <button class="btn btn-primary" type="submit">Ara</button>
+        </form>
+        <div class="nav-right">
+          <a class="btn btn-primary" href="seller-dashboard.html">Satıcı Paneli</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="profile-header">
+        <img id="profile-avatar" class="avatar" alt="Profil">
+        <div>
+          <div id="profile-name" style="font-weight:700; font-size:18px;"></div>
+          <div id="profile-city" class="muted"></div>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <div class="tab active" data-target="#purchases">Satın Alınanlar</div>
+        <div class="tab" data-target="#sales">Satılanlar</div>
+        <div class="tab" data-target="#favorites">Favoriler</div>
+      </div>
+
+      <div id="purchases" class="tab-panel">
+        <div class="product-grid"></div>
+      </div>
+      <div id="sales" class="tab-panel hidden">
+        <div class="product-grid"></div>
+      </div>
+      <div id="favorites" class="tab-panel hidden">
+        <div class="product-grid"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>DolapX</strong>
+          <div class="muted">Hakkımızda · İletişim · KVKK</div>
+        </div>
+        <div class="social">
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="Facebook">f</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+  </html>
+

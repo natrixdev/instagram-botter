@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Satıcı Paneli – DolapX</title>
+    <meta name="description" content="Ürünlerinizi yönetin, stok ve satış istatistiklerini görün.">
+    <link rel="canonical" href="/seller-dashboard.html">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="seller-dashboard">
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a class="brand" href="index.html" aria-label="Ana sayfa">
+          <span class="brand-logo"></span>
+          DolapX
+        </a>
+        <nav class="nav-links">
+          <div class="dropdown">
+            <button class="dropdown-toggle">Kategoriler</button>
+            <div class="dropdown-menu">
+              <a href="category.html?category=Giyim">Giyim</a>
+              <a href="category.html?category=Elektronik">Elektronik</a>
+              <a href="category.html?category=Aksesuar">Aksesuar</a>
+              <a href="category.html?category=Kitap">Kitap</a>
+            </div>
+          </div>
+        </nav>
+        <form id="nav-search-form" class="search" role="search">
+          <input id="nav-search-input" type="search" placeholder="Ürün veya kategori ara" aria-label="Ara">
+          <button class="btn btn-primary" type="submit">Ara</button>
+        </form>
+        <div class="nav-right">
+          <a class="btn" href="profile.html">Profil</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="dashboard-grid">
+        <div class="card">
+          <h3>Ürün Ekle/Düzenle</h3>
+          <form id="product-form" class="form-grid">
+            <input id="f-id" type="hidden">
+            <label class="full">Başlık
+              <input id="f-title" required placeholder="Örn: Az kullanılmış spor ayakkabı">
+            </label>
+            <label>Fiyat (TL)
+              <input id="f-price" type="number" min="0" required>
+            </label>
+            <label>Kategori
+              <select id="f-category" required>
+                <option>Giyim</option>
+                <option>Elektronik</option>
+                <option>Aksesuar</option>
+                <option>Kitap</option>
+              </select>
+            </label>
+            <label>Durum
+              <select id="f-condition" required>
+                <option>Yeni</option>
+                <option>Çok iyi</option>
+                <option>İyi</option>
+              </select>
+            </label>
+            <label>Konum
+              <select id="f-location" required>
+                <option>İstanbul</option>
+                <option>Ankara</option>
+                <option>İzmir</option>
+                <option>Bursa</option>
+                <option>Antalya</option>
+              </select>
+            </label>
+            <label class="full">Görseller (virgülle ayır)
+              <input id="f-images" placeholder="https://... , https://...">
+            </label>
+            <label class="full">Açıklama
+              <textarea id="f-description" placeholder="Ürünle ilgili detayları yazın"></textarea>
+            </label>
+            <div class="full" style="display:flex; gap:8px;">
+              <button class="btn btn-primary" type="submit">Kaydet</button>
+              <button id="btn-clear" class="btn" type="button">Temizle</button>
+            </div>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Özet</h3>
+          <div class="stats">
+            <div class="stat"><div class="muted">Ürün</div><div id="stat-products" style="font-weight:700; font-size:18px;">0</div></div>
+            <div class="stat"><div class="muted">Satış</div><div id="stat-sales" style="font-weight:700; font-size:18px;">0</div></div>
+            <div class="stat"><div class="muted">Gelir</div><div id="stat-income" style="font-weight:700; font-size:18px;">0₺</div></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="section-header">
+          <h3 class="section-title">Ürünlerim</h3>
+        </div>
+        <div id="seller-products" class="product-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>DolapX</strong>
+          <div class="muted">Hakkımızda · İletişim · KVKK</div>
+        </div>
+        <div class="social">
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="Facebook">f</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+  </html>
+

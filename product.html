@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ürün Detayı – DolapX</title>
+    <meta name="description" content="Ürün görselleri, açıklama ve satıcı bilgileriyle detay sayfası.">
+    <meta property="og:title" content="Ürün Detayı – DolapX">
+    <meta property="og:description" content="Satıcı ile mesajlaş, favorilere ekle.">
+    <link rel="canonical" href="/product.html">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="product">
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a class="brand" href="index.html" aria-label="Ana sayfa">
+          <span class="brand-logo"></span>
+          DolapX
+        </a>
+        <nav class="nav-links">
+          <div class="dropdown">
+            <button class="dropdown-toggle">Kategoriler</button>
+            <div class="dropdown-menu">
+              <a href="category.html?category=Giyim">Giyim</a>
+              <a href="category.html?category=Elektronik">Elektronik</a>
+              <a href="category.html?category=Aksesuar">Aksesuar</a>
+              <a href="category.html?category=Kitap">Kitap</a>
+            </div>
+          </div>
+        </nav>
+        <form id="nav-search-form" class="search" role="search">
+          <input id="nav-search-input" type="search" placeholder="Ürün veya kategori ara" aria-label="Ara">
+          <button class="btn btn-primary" type="submit">Ara</button>
+        </form>
+        <div class="nav-right">
+          <a class="btn" href="profile.html">Profil</a>
+          <a class="btn btn-primary" href="seller-dashboard.html">Satıcı Paneli</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container section">
+      <div class="product-page">
+        <div>
+          <div class="gallery">
+            <img id="gallery-main" class="gallery-main" alt="Ürün görseli">
+            <div id="gallery-thumbs" class="thumbs"></div>
+          </div>
+          <div class="product-info" style="margin-top:12px;">
+            <h1 id="p-title"></h1>
+            <div id="p-meta" class="muted"></div>
+            <p id="p-desc" style="margin-top:8px;"></p>
+          </div>
+        </div>
+        <aside>
+          <div class="seller-card">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <img id="seller-avatar" class="avatar" alt="Satıcı">
+              <div>
+                <div id="seller-name" style="font-weight:600;"></div>
+                <div id="seller-city" class="muted"></div>
+              </div>
+            </div>
+            <div class="product-actions">
+              <button id="msg-btn" class="btn btn-primary">Mesaj Gönder</button>
+              <button id="fav-btn" class="btn favorite-btn" aria-label="Favorilere ekle">❤</button>
+            </div>
+            <div style="margin-top:10px; font-weight:700; font-size:18px;">
+              <span id="p-price"></span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>DolapX</strong>
+          <div class="muted">Hakkımızda · İletişim · KVKK</div>
+        </div>
+        <div class="social">
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="Facebook">f</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+  </html>
+

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kategoriler – DolapX</title>
+    <meta name="description" content="Giyim, Elektronik, Aksesuar ve Kitap kategorilerinde ikinci el ürünleri keşfet.">
+    <meta property="og:title" content="Kategoriler – DolapX">
+    <meta property="og:description" content="Filtrelerle aradığını hızla bul.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="/category.html">
+  </head>
+  <body data-page="category">
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a class="brand" href="index.html" aria-label="Ana sayfa">
+          <span class="brand-logo"></span>
+          DolapX
+        </a>
+        <nav class="nav-links">
+          <div class="dropdown">
+            <button class="dropdown-toggle">Kategoriler</button>
+            <div class="dropdown-menu">
+              <a href="category.html?category=Giyim">Giyim</a>
+              <a href="category.html?category=Elektronik">Elektronik</a>
+              <a href="category.html?category=Aksesuar">Aksesuar</a>
+              <a href="category.html?category=Kitap">Kitap</a>
+            </div>
+          </div>
+        </nav>
+        <form id="nav-search-form" class="search" role="search">
+          <input id="nav-search-input" type="search" placeholder="Ürün veya kategori ara" aria-label="Ara">
+          <button class="btn btn-primary" type="submit">Ara</button>
+        </form>
+        <div class="nav-right">
+          <a class="btn" href="profile.html">Profil</a>
+          <a class="btn btn-primary" href="seller-dashboard.html">Satıcı Paneli</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="pills" aria-label="Kategoriler">
+        <span class="pill" data-category="">Tümü</span>
+        <span class="pill" data-category="Giyim">Giyim</span>
+        <span class="pill" data-category="Elektronik">Elektronik</span>
+        <span class="pill" data-category="Aksesuar">Aksesuar</span>
+        <span class="pill" data-category="Kitap">Kitap</span>
+      </div>
+
+      <div class="filters" aria-label="Filtreler">
+        <div class="field">
+          <label for="filter-min">Min Fiyat</label>
+          <input id="filter-min" type="number" placeholder="0">
+        </div>
+        <div class="field">
+          <label for="filter-max">Max Fiyat</label>
+          <input id="filter-max" type="number" placeholder="10000">
+        </div>
+        <div class="field">
+          <label for="filter-condition">Durum</label>
+          <select id="filter-condition">
+            <option value="">Tümü</option>
+            <option>Yeni</option>
+            <option>Çok iyi</option>
+            <option>İyi</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="filter-location">Konum</label>
+          <select id="filter-location">
+            <option value="">Tümü</option>
+            <option>İstanbul</option>
+            <option>Ankara</option>
+            <option>İzmir</option>
+            <option>Bursa</option>
+            <option>Antalya</option>
+          </select>
+        </div>
+        <div class="field" style="grid-column: span 4;">
+          <label for="filter-text">Arama</label>
+          <input id="filter-text" type="search" placeholder="Ürün adı veya açıklama">
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="section-header">
+          <h3 class="section-title">Ürünler</h3>
+        </div>
+        <div id="category-products" class="product-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>DolapX</strong>
+          <div class="muted">Hakkımızda · İletişim · KVKK</div>
+        </div>
+        <div class="social">
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="Facebook">f</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+  </html>
+

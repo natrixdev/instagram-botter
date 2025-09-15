@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DolapX – İkinci El Alışveriş | Popüler ve Yeni Ürünler</title>
+    <meta name="description" content="DolapX ile ikinci el ürünleri güvenle al ve sat. Popüler ürünler, yeni eklenenler ve fırsat kampanyaları burada.">
+    <meta property="og:title" content="DolapX – İkinci El Alışveriş">
+    <meta property="og:description" content="Popüler ürünler, yeni eklenenler ve kampanyalar.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="/index.html">
+  </head>
+  <body data-page="home">
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a class="brand" href="index.html" aria-label="Ana sayfa">
+          <span class="brand-logo"></span>
+          DolapX
+        </a>
+        <nav class="nav-links">
+          <div class="dropdown">
+            <button class="dropdown-toggle">Kategoriler</button>
+            <div class="dropdown-menu">
+              <a href="category.html?category=Giyim">Giyim</a>
+              <a href="category.html?category=Elektronik">Elektronik</a>
+              <a href="category.html?category=Aksesuar">Aksesuar</a>
+              <a href="category.html?category=Kitap">Kitap</a>
+            </div>
+          </div>
+        </nav>
+        <form id="nav-search-form" class="search" role="search">
+          <input id="nav-search-input" type="search" placeholder="Ürün veya kategori ara" aria-label="Ara">
+          <button class="btn btn-primary" type="submit">Ara</button>
+        </form>
+        <div class="nav-right">
+          <a class="btn" href="profile.html">Profil</a>
+          <a class="btn btn-primary" href="seller-dashboard.html">Satıcı Paneli</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="banner">
+            <div>
+              <h2>Dolabını Boşalt, Cebin Dolsun</h2>
+              <p>İkinci el ürünlerini kolayca sat. Sıfır masraf, hızlı yayınlama.</p>
+              <a class="btn btn-primary" href="seller-dashboard.html">Hemen Sat</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1513708924381-bc3f01cf9a1f?q=80&w=800&auto=format&fit=crop" alt="Kampanya görseli">
+          </div>
+          <div class="banner">
+            <div>
+              <h2>Mükemmel Fırsatlar</h2>
+              <p>Popüler kategorilerde %50'ye varan indirimler seni bekliyor.</p>
+              <a class="btn btn-outline" href="category.html">Keşfet</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=800&auto=format&fit=crop" alt="Fırsat görseli">
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="section-title">Popüler Ürünler</h3>
+            <a class="btn" href="category.html">Tümünü Gör</a>
+          </div>
+          <div id="popular-products" class="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="section-title">Yeni Eklenenler</h3>
+            <a class="btn" href="category.html">Tümünü Gör</a>
+          </div>
+          <div id="new-products" class="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>DolapX</strong>
+          <div class="muted">Hakkımızda · İletişim · KVKK</div>
+        </div>
+        <div class="social">
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="Facebook">f</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+  </html>
+
