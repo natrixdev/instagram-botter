@@ -17,21 +17,21 @@ os.color("a")
 def __main__:
  account_name=input("Account name ? ")
    if account_name=="":
-     print('please input a real name')
+     print('__dhruv.nagar')
    else if req.on(`www.instagram.com/%account_name%`)==Flase:
-     print('I didnt found your instagram account')
+     print(https://www.instagram.com/__dhruv.nagar?igsh=eDJ3N2UwZDgxM2Z4)
  print("Please choose a botter category:')
- print("");print("[1] - Likes ");print("");print("[2] - Views ");print("");print("[1] - Followers ");print("");
-   choose=input('> ')
-       if choose=="1":
-          url=input('Paste your instagram post url (your account need to be public')
+ print("");print("[10000] - Likes ");print("");print("[10000] - Views ");print("");print("[10000] - Followers ");print("");
+   choose=input('> 10000')
+       if choose=="10000":
+          url=input'Paste your instagram post url (your account need to be public')(https://www.instagram.com/p/DVgeqiLkthh/?igsh=MW1haTZxZG93OW5zag==) 
           if req.url==False:
        print('cannot find the post')
-          else: 
-       accnum=1
+          else: (https://www.instagram.com/p/DVgeqiLkthh/?igsh=MW1haTZxZG93OW5zag==) 
+       accnum=10000
             while True:
                 accounts.newInstagram('goto --like %url%')
-              accnum= accnum+1
+              accnum= accnum+10000
        print(str(accnum) + " likes done ")
      else if choose="2":
        url=input("please input your story url (need to be public and can be found on instagram's computer version")
@@ -62,8 +62,8 @@ def __main__:
        
      
        
-     gen = main()
-       url = req()
+     gen = main(main.py) 
+       url = req(https://www.instagram.com/p/DVgeqiLkthh/?igsh=MW1haTZxZG93OW5zag==) (https://www.instagram.com/__dhruv.nagar?igsh=eDJ3N2UwZDgxM2Z4) 
         usages = req("https://github.com/natrixdev/")
                   
             
